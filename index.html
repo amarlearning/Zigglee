@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="myLanguage">
 <head>
 	<meta charset="UTF-8">
 	<title>AngularJS | Hands On!</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="locals/angular.min.js"></script>
 </head>
 <body>
-	<input type="text" ng-model="langlist=[{name:'PHP',extension:'.php'},{name:'C++',extension:'.c'},{name:'PYTHON',extension:'.py'},{name:'RUBY',extension:'.rb'}]">
-	<p ng-repeat="language in langlist">
-		Name : {{language.name}} <br />
-		Extension : {{language.extension}} <br />
-	</p>
+	<div ng-controller="language">
+		<button>Php</button>
+		<button>Javascript</button>
+		<button>C++</button>
+		<button>Python</button>
+	</div>
+	<script src="locals/script.js"></script>
 </body>
 </html>
