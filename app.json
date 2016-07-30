@@ -1,8 +1,8 @@
 {
-  "name": "Python on Heroku example",
-  "description": "A barebones Python app, which can easily be deployed to Heroku.",
+  "name": "iStarbot",
+  "description": "Python script to get as many stars on your GitHub repository as you want.",
   "image": "heroku/python",
-  "repository": "https://github.com/heroku/python-getting-started",
+  "repository": "https://github.com/amarlearning/istarbot",
   "keywords": ["python", "django" ],
   "addons": [ "heroku-postgresql" ]
 }
