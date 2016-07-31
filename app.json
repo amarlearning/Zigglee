@@ -1,8 +1,0 @@
-{
-  "name": "iStarbot",
-  "description": "Python script to get as many stars on your GitHub repository as you want.",
-  "image": "heroku/python",
-  "repository": "https://github.com/amarlearning/istarbot",
-  "keywords": ["python", "django" ],
-  "addons": [ "heroku-postgresql" ]
-}
