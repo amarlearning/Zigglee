@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import githubBots,repository
 
-# Register your models here.
+admin.site.register(githubBots)
+admin.site.register(repository)
