@@ -1,1 +1,1 @@
-web: gunicorn iStarbot.wsgi
+web: gunicorn website.wsgi

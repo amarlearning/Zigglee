@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes | Recipejaar</title>
+</head>
+<body>
+    {% if all_recipes %}
+        <h3>Here is the list of all your recipes!</h3>
+        <ul>
+            {% for recipe in all_recipes %}
+                <li><a href="/recipe/{{ recipe.id }}">{{ recipe.recipe_name }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>You don't have any recipe in your database!</p>
+    {% endif %}
+</body>
+</html>

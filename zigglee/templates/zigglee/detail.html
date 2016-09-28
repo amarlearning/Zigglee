@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ recipe.recipe_name }} | RecipeJaar</title>
+</head>
+<body>
+    <h3>{{ recipe.recipe_name }}</h3>
+    <ul>
+        {% for ingre in ingredients %}
+            <li>{{ ingre }}</li>
+        {% endfor %}
+    </ul>
+    <p>Cooking Method : {{ recipe.cooking_method }}</p>
+
+</body>
+</html>
