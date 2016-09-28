@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import Http404
+from django.http import Http404, HttpResponse
 from .models import Recipe
 import re
 
@@ -18,7 +18,12 @@ def detail(request, recipe_id):
         raise Http404("This page Does Not Exist")
     else:
         ingredients = re.split(',', selected_recipe.ingredients)
+        selected_recipe.visited += 1
+        selected_recipe.save()
         return render(request, 'zigglee/detail.html', {
             'recipe' : selected_recipe,
             'ingredients' : ingredients,
         })
+
+def image(request,image_name):
+    return HttpResponse("../zigglee/static/zigglee/uploads/"+image_name)
