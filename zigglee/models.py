@@ -8,7 +8,7 @@ class Recipe(models.Model):
     cooking_method = models.TextField(max_length=15000)
     recipe_thumb = models.FileField()
     cover_image = models.FileField()
-    visited = models.BigIntegerField(editable = False)
+    visited = models.BigIntegerField(default=0 ,editable = False)
     created_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
