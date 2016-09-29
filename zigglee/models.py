@@ -1,6 +1,4 @@
 from django.db import models
-# from datetime import datetime
-# from PIL import Image
 
 # Create your models here.
 class Recipe(models.Model):
@@ -10,7 +8,7 @@ class Recipe(models.Model):
     cooking_method = models.TextField(max_length=15000)
     recipe_thumb = models.ImageField(upload_to="./zigglee/static/zigglee/uploads")
     cover_image = models.ImageField(upload_to="./zigglee/static/zigglee/uploads")
-    visited = models.BigIntegerField()
+    visited = models.BigIntegerField(editable = False)
     created_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

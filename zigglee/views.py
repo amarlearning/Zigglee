@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import Http404, HttpResponse
+from django.http import Http404
 from .models import Recipe
 import re
 
@@ -10,6 +10,13 @@ def index(request):
         'all_recipes' : all_recipe,
     }
     return render(request, 'zigglee/index.html', context)
+
+def list(request):
+    all_recipe = Recipe.objects.all()
+    context = {
+        'all_recipe' : all_recipe,
+    }
+    return render(request, 'zigglee/recipe.html', context)
 
 def detail(request, recipe_id):
     try:
@@ -24,6 +31,3 @@ def detail(request, recipe_id):
             'recipe' : selected_recipe,
             'ingredients' : ingredients,
         })
-
-def image(request,image_name):
-    return HttpResponse("../zigglee/static/zigglee/uploads/"+image_name)
