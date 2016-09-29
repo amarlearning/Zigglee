@@ -6,8 +6,8 @@ class Recipe(models.Model):
     ingredients = models.TextField(max_length=1500)
     recipe_intro = models.TextField(max_length=1500)
     cooking_method = models.TextField(max_length=15000)
-    recipe_thumb = models.ImageField(upload_to="./zigglee/static/zigglee/uploads")
-    cover_image = models.ImageField(upload_to="./zigglee/static/zigglee/uploads")
+    recipe_thumb = models.FileField()
+    cover_image = models.FileField()
     visited = models.BigIntegerField(editable = False)
     created_date = models.DateTimeField(auto_now_add=True)
 
