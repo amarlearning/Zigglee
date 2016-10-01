@@ -69,6 +69,15 @@
 .slider .indicators .indicator-item.active {
     background-color: #e53935 !important;
 }
+.card .card-image .card-title {
+	padding: 4px !important;
+	position: relative !important;
+	top: 3px !important;
+}
+.card-action a {
+	cursor: pointer;
+	color: #b71c1c !important;
+}
 @media screen and (max-width: 992px) {
 	.container-most-viewed {
 		width: 60%;

@@ -6,8 +6,10 @@ import re
 # Create your views here.
 def index(request):
     all_recipe = Recipe.objects.all()
+    most_viewed = Recipe.objects.all().order_by('-visited')[:3]
     context = {
         'all_recipes' : all_recipe,
+        'most_viewed' : most_viewed,
     }
     return render(request, 'zigglee/index.html', context)
 

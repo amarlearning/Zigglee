@@ -41,53 +41,22 @@
         <section class="most-viewed red darken-2">
             <h3 class="center satisfy heading">Most Viewed Recipes</h3>
             <div class="row container-most-viewed">
-                <div class="col s12 m12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="http://recipejaar.com/img/6-min.jpg">
-                        <span class="card-title">Card Title</span>
+                {% for most in most_viewed %}
+                    <div class="col s12 m12 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="{{ most.recipe_thumb.url }}">
+                            <span class="card-title satisfy red darken-2">{{ most.recipe_name }}</span>
+                        </div>
+                        <div class="card-content">
+                            <p>{{ most.recipe_intro }}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Read More</a>
+                        </div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="http://recipejaar.com/img/5-min.jpg">
-                        <span class="card-title">Card Title</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="http://recipejaar.com/img/8-min.jpg">
-                        <span class="card-title">Card Title</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </section>
         <section class="new-recipe">
