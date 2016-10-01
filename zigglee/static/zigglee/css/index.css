@@ -1,14 +1,5 @@
-*::selection
-{
+*::selection {
  	background: #ffcc00;
-}
-section {
-	min-height:100vh;
-	height : 100%;
-}
-header {
-	min-height:85vh;
-	height : 100%;
 }
 .logo {
 	font-size: 25px;
@@ -44,10 +35,41 @@ header {
 .alpha-color {
 	background-color: rgba(84, 110, 122, 0.8);
 }
-.caption h2,h4,h3,h5 {
+.caption h2,h4,h3 {
     font-family: 'Satisfy', cursive;
 }
 .caption h2 {
     font-size: 55px;
     padding-bottom: 10px;
+}
+.most-viewed {
+	width: 100%;
+	height: 100%;
+	background-color: #e53935;
+}
+.new-recipe {
+	width: 100%;
+	height:100vh;
+}
+.satisfy {
+	font-family: 'Satisfy', cursive;
+}
+.heading {
+	font-size: 40px;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	color: white;
+}
+.container-most-viewed {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.slider .indicators .indicator-item.active {
+    background-color: #e53935 !important;
+}
+@media screen and (max-width: 992px) {
+	.container-most-viewed {
+		width: 60%;
+	}
 }
