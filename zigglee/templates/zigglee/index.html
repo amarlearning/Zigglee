@@ -1,19 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Recipes | Recipejaar</title>
-</head>
-<body>
-    {% if all_recipes %}
-        <h3>Here is the list of all your recipes!</h3>
-        <ul>
-            {% for recipe in all_recipes %}
-                <li><a href="/recipe/{{ recipe.id }}">{{ recipe.recipe_name }}</a></li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <p>You don't have any recipe in your database!</p>
-    {% endif %}
-</body>
-</html>
+{% extends 'zigglee/base.html' %}
+{% load staticfiles %}
+{% block external_css %}
+    <link rel="stylesheet" href="{% static 'zigglee/css/index.css' %}" media="screen" title="no title" charset="utf-8">
+{% endblock %}
+{% block body %}
+    <header>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="http://recipejaar.com/img/9-min.jpg" alt=""/>
+                    <div class="caption center-align">
+                        <h2>RecipeJaar</h2>
+                        <h4 class="light grey-text text-lighten-3">A Jaar full of Surprises &amp; Happiness!</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://recipejaar.com/img/5-min.jpg" alt=""/>
+                    <div class="caption left-align">
+                        <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://recipejaar.com/img/8-min.jpg" alt=""/>
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://recipejaar.com/img/6-min.jpg" alt=""/>
+                    <div class="caption left-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+{% endblock %}

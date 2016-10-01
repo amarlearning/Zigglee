@@ -1,0 +1,54 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+        <link rel="icon"  type="image/png"  href="{% static 'zigglee/favicon.ico' %}" />
+        <title>{% block title %}RecipeJaar | A Jaar full of Surprises & Hapiness!{% endblock %}</title>
+        <meta name="author" content="Shweta Rajput">
+        <meta property="og:url" content="http://RecipeJaar.com"/>
+        <meta property="og:site_name" content="RecipeJaar | A Jaar full of surprises & Hapiness!"/>
+        <meta property="og:title" content="RecipeJaar | A Jaar full of surprises & Hapiness!"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content=""/>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="{% static 'zigglee/css/base.css' %}" media="screen" title="no title" charset="utf-8">
+        {% block external_css %}{% endblock %}
+    </head>
+    <body>
+    <!-- materialize NAVBAR -->
+    <nav class="red darken-2">
+        <div class="nav-wrapper container red darken-2">
+            <a href="/" class="brand-logo hide-on-med-and-down">RecipeJaar</a>
+            <a href="/" class="brand-logo hide-on-large-only center">RecipeJaar</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Recipes</a></li>
+                <li><a href="">Kitchen</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li style="color:#000" class="collection-header center"><h4>Menu</h4></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Recipes</a></li>
+                <li><a href="">Kitchen</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="{% static 'zigglee/js/script.js' %}"></script>
+    </body>
+</html>
