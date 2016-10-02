@@ -18,7 +18,13 @@ def list(request):
     context = {
         'all_recipe' : all_recipe,
     }
-    return render(request, 'zigglee/recipe.html', context)
+    return render(request, 'zigglee/recipelist.html', context)
+
+def about(request):
+    return render(request, 'zigglee/about.html')
+
+def contact(request):
+    return render(request, 'zigglee/contact.html')
 
 def detail(request, recipe_id):
     try:
