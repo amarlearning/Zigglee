@@ -18,6 +18,7 @@
         <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" media="screen" title="no title" charset="utf-8">
+{#        <link rel="stylesheet" href="{% static 'zigglee/css/materialize.css' %}" media="screen" title="no title" charset="utf-8">#}
         <link rel="stylesheet" href="{% static 'zigglee/css/base.css' %}" media="screen" title="no title" charset="utf-8">
         {% block external_css %}{% endblock %}
     </head>
@@ -73,8 +74,10 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>#}
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>#}
+    <script src="{% static 'zigglee/js/jquery.min.js' %}"></script>
+    <script src="{% static 'zigglee/js/materialize.js' %}"></script>
     <script src="{% static 'zigglee/js/script.js' %}"></script>
     </body>
 </html>

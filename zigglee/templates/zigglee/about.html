@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'zigglee/base.html' %}
+{% load staticfiles %}
+{% block external_css %}
+    <link rel="stylesheet" href="{% static 'zigglee/css/about.css'%}" media="screen" title="no title" charset="utf-8">
+{% endblock %}
+{% block body %}
+    <div class="intro-full-block">
+
+    </div>
+{% endblock %}
