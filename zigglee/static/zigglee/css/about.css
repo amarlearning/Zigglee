@@ -1,0 +1,9 @@
+.intro-full-block {
+    width:50%;
+    height:500px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 1px #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
