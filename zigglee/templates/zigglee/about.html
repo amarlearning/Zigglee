@@ -1,10 +1,38 @@
 {% extends 'zigglee/base.html' %}
 {% load staticfiles %}
 {% block external_css %}
+{#    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">#}
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'zigglee/css/about.css'%}" media="screen" title="no title" charset="utf-8">
 {% endblock %}
 {% block body %}
-    <div class="intro-full-block">
-
+    <div class="intro-full-block"></div>
+    <div class="intro-full-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aut beatae earum
+            et fugiat illo, ipsa neque nulla numquam odio omnis quod vel? Aliquid explicabo
+            facere ipsa placeat praesentium sint. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Amet dicta distinctio dolore eaque, eos expedita explicabo
+            impedit iste natus, necessitatibus optio,praesentium temporibus ut. Eveniet
+            hic id laboriosam ut vitae.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nulla possimus
+            unde! Alias consectetur culpa dignissimos dolores eius, error hic inventore libero
+            minus nobis, officia, quidem tempora totam ullam vero!</p>
+    </div>
+    <div class="row divided-coloum">
+        <div class="col s12 m12 l6 divided-left">
+            <img src="{% static "zigglee/img/shweta.jpg" %}"/>
+        </div>
+        <div class="col s12 m12 l6 divided-right">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nulla possimus
+            unde! Alias consectetur culpa dignissimos dolores eius, error hic inventore libero
+            minus nobis, officia, quidem tempora totam ullam vero! <br> ipsum dolor sit amet,
+            consectetur adipisicing elit. Asperiores nulla possimus unde! Alias consectetur
+            culpa dignissimos dolores eius, error hic inventore libero minus nobis, officia,
+            quidem tempora totam ullam vero!</p>
+        </div>
+    </div>
+    <div class="last-section">
+        <p>Lorem ipsum dolor sit amet, consectetur adi - </p>
+        <p class="author">Shweta Rajput</p>
     </div>
 {% endblock %}

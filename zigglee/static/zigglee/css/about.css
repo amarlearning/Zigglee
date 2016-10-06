@@ -1,9 +1,79 @@
 .intro-full-block {
     width:50%;
-    height:500px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 1px #ccc;
+    height:50vh;
+    box-shadow: 0 0 2px #ccc;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    background-image: url("http://recipejaar.com/img/8-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.intro-full-content {
+    width:50%;
+    height:100%;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    margin-left: auto;
+    padding: 15px;
+    font-family: 'Handlee', cursive;
+    text-align: justify;
+    margin-right: auto;
+    font-size: 17px;
+}
+.divided-left, .divided-right {
+    height:100%;
+}
+.divided-left img {
+    height:100%;
+    width:100%;
+}
+.divided-right p {
+    font-family: 'Handlee', cursive;
+    font-size: 17px;
+    text-align: justify;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    line-height: 28px;
+}
+.divided-coloum {
+    width:50%;
+    height:100%;
+    min-height: 300px;
+    border-right: 1px solid #eee;
+}
+.last-section {
+    font-family: 'Handlee', cursive;
+    font-size: 17px;
+    text-align: justify;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    line-height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    height:100%;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.author {
+    font-size: 40px;
+    color: #d32f2f;
+    text-align: right;
+    padding-right: 70px;
+}
+@media screen and (max-width: 600px) {
+    .intro-full-block {
+        width: 95%;
+    }
+    .intro-full-content {
+        width: 95%;
+    }
+    .divided-coloum {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
